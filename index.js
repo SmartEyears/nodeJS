@@ -1,4 +1,8 @@
 import express from "express";
+import morgan from "morgan";
+import helmet from "helmet";
+import cookieparser from "cookie-parser";
+import bodyparser from "body-parser";
 
 const app = express();
 
@@ -11,12 +15,11 @@ const handleHome = (req, res) => res.send("Hello from Home");
 
 const handleProfile = (req, res) => res.send("You are on my profile");
 
-const betweenHome = (req, res, next) => {
-  console.log("미들웨어!");
-  next();
-};
-
-app.use(betweenHome);
+app.use(cookieparser());
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: true }));
+app.use(helmet());
+app.use(morgan("dev"));
 
 app.get("/", handleHome);
 
