@@ -41,3 +41,5 @@
 - 파일 확장자는 .pug
 - extends의 개념이 사용된다. 모든 뷰에 헤더 푸터를 사용할 필요가 없이 불러올수있음
 - block content를 이용해서 원하는 위치에 알맞는 내용을 집어 넣을수가 있다.
+- include를 이용할 수 있다.
+- 퍼그 탬플릿에서 javascript를 사용하려면 #{new Date().getFullYear()}와 같이 사용하면 된다.
