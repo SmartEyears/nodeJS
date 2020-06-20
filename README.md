@@ -46,3 +46,4 @@
 - 미들웨어를 사용해 헤더의 Join Login과 같은 링크를 라우트 객체(object)에 접근하도록 할 수 있다.
 - 미들웨어를 만들고 res.locals를 이용한다. locals는 로컬 변수 응답을 포함하는 객체
 - routes를 import하고 res.locals.routes = routes 해주면 템플릿 및 어느곳이듯 전역적으로 사용 가능한 변수를 만들 수 있다.
+- res.render(템플릿, 정보를 담은 변수) render의 두번째 인자는 탬플릿에서 받아서 사용가능
