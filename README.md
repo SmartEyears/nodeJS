@@ -1,4 +1,4 @@
-# 바닐라 노드 JS를 이용한 유튜브 클론 코딩 20.06.14
+# 바닐라 Js AND 노드 JS를 이용한 유튜브 클론 코딩 20.06.14
 
 ##### 20.06.14
 
@@ -43,3 +43,6 @@
 - block content를 이용해서 원하는 위치에 알맞는 내용을 집어 넣을수가 있다.
 - include를 이용할 수 있다.
 - 퍼그 탬플릿에서 javascript를 사용하려면 #{new Date().getFullYear()}와 같이 사용하면 된다.
+- 미들웨어를 사용해 헤더의 Join Login과 같은 링크를 라우트 객체(object)에 접근하도록 할 수 있다.
+- 미들웨어를 만들고 res.locals를 이용한다. locals는 로컬 변수 응답을 포함하는 객체
+- routes를 import하고 res.locals.routes = routes 해주면 템플릿 및 어느곳이듯 전역적으로 사용 가능한 변수를 만들 수 있다.
