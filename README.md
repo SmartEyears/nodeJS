@@ -19,3 +19,18 @@
 - 미들웨어로 사용되는 함수에는 next()라는 함수가 있어야 한다. 그래야 다음 로직으로 넘어간다.
 - 설치한 미들웨어 종류 morgan, helmet, cookie-parser, body-parser
 - morgan : 로그를 위한 미들웨어, helmet : 보안을 위한 미들웨어, cookie-parser : 쿠키를 위한 미들웨어, body-parser : 바디의 정보를 다루기 위한 미들웨어
+
+#### 20.06.18
+
+- 라우터 router express에 포함되어있다.
+- 라우터를 export해서 나눠서 사용할 수 있다.
+- export const userRouter = express.Router(); : export 문법
+- import { userRouter } from "./router"; : import 문법
+- app.use("/user", userRouter); : import한 라우터를 사용하는 방법
+- 위와 같이 사용하면 /user/ edit, password 같이 import한 라우더가 뒤로 붙는다. 6.18일 날짜에 router소스 참조
+- 모든 주소들은 routes.js에 정의 해두었음 이 곳에서 변경하면 모두 적용되도록
+
+#### 20.06.20
+
+- 컨트롤러 어떻게 처리할지 정의하는 부분
+- Pug(뷰 엔진) 설치

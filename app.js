@@ -3,27 +3,22 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cookieparser from "cookie-parser";
 import bodyparser from "body-parser";
-import { userRouter } from "./router";
+import userRouter from "./routers/userRouter";
+import videoRouter from "./routers/videoRouter";
+import globalRouter from "./routers/globalRouter";
+import routes from "./routes";
 
 const app = express();
 
-const handleListening = () =>
-  console.log(`Listening on: http://localhost:${PORT}`);
-
-const handleHome = (req, res) => res.send("Hello from Home");
-
-const handleProfile = (req, res) => res.send("You are on my profile");
-
+app.set("view engine", "pug");
 app.use(cookieparser());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.get("/", handleHome);
-
-app.get("/profile", handleProfile);
-
-app.use("/user", userRouter);
+app.use(routes.home, globalRouter);
+app.use(routes.users, userRouter);
+app.use(routes.videos, videoRouter);
 
 export default app;
