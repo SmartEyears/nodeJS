@@ -4,7 +4,7 @@ export const videos = [
         title: "Video awesome!",
         description: "This is my first time Video!",
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id:12333,
             name: "taeho",
@@ -13,10 +13,10 @@ export const videos = [
     },
     {
         id: 1234111,
-        title: "Video test Three!",
+        title: "Video test!",
         description: "This is my first time Video!",
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id:12333,
             name: "taeho",
@@ -28,7 +28,7 @@ export const videos = [
         title: "Video Test Two!",
         description: "This is my first time Video!",
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id:12333,
             name: "taeho",
@@ -40,7 +40,7 @@ export const videos = [
         title: "Video Test One",
         description: "This is my first time Video!",
         views: 24,
-        videoFile: "https://archive.org/details/BigBuckBunny_124",
+        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
         creator: {
             id:12333,
             name: "taeho",
