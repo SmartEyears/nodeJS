@@ -1,12 +1,14 @@
 import { videos } from "../db"
 
-export const home = (req, res) => res.render("home", { pageTitle: "Home", videos }); //첫번째 인자는 템플릿, 두번째인자는 정보가 담긴 객체
+export const home = (req, res) => {
+  res.render("home", { pageTitle: "Home", videos }); //첫번째 인자는 템플릿, 두번째인자는 정보가 담긴 객체
+};
 
 export const search = (req, res) => {
   const {
     query: { term: searchingBy }
   } = req;
-  res.render("search", { pageTitle: "Search", searchingBy });
+  res.render("search", { pageTitle: "Search", searchingBy, videos });
 };
 
 export const upload = (req, res) =>
